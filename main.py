@@ -12,7 +12,8 @@ from time import sleep
 class LinkedInBot:
 
     def __init__(self):
-        self.driver = webdriver.Chrome("C://Users/User/PycharmProjects/chromedriver")
+        # self.driver = webdriver.Chrome("C://Users/User/PycharmProjects/chromedriver")
+        self.driver = webdriver.Chrome("./chromedriver.exe")
         self.driver.get("https://LinkedIn.com")
 
     def log_in(self, username, passwd):
